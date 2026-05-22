@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Neon VIP Access</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
+
+body{
+min-height:100vh;
+background:#05070d;
+color:white;
+display:flex;
+flex-direction:column;
+align-items:center;
+padding:20px;
+overflow-x:hidden;
+}
+
+/* background glow */
+.bg-glow{
+position:fixed;
+width:500px;
+height:500px;
+background:radial-gradient(circle,#7c3aed55,#0000 60%);
+top:-120px;
+left:-120px;
+filter:blur(40px);
+}
+
+.bg-glow2{
+position:fixed;
+width:500px;
+height:500px;
+background:radial-gradient(circle,#00e5ff33,#0000 60%);
+bottom:-150px;
+right:-150px;
+filter:blur(40px);
+}
+
+/* badge */
+.badge{
+margin-top:15px;
+padding:10px 18px;
+border-radius:30px;
+background:rgba(255,255,255,0.06);
+border:1px solid rgba(255,255,255,0.1);
+backdrop-filter:blur(10px);
+display:flex;
+align-items:center;
+gap:10px;
+}
+
+.dot{
+width:10px;
+height:10px;
+background:#00ff9d;
+border-radius:50%;
+box-shadow:0 0 10px #00ff9d;
+}
+
+/* title */
+h1{
+margin-top:25px;
+font-size:44px;
+text-align:center;
+line-height:1.1;
+font-weight:900;
+}
+
+.neon{
+color:#00e5ff;
+text-shadow:0 0 20px #00e5ff;
+}
+
+/* image wrapper (CENTER FEATURE) */
+.image-box{
+margin-top:30px;
+width:100%;
+max-width:420px;
+height:360px;
+border-radius:25px;
+overflow:hidden;
+position:relative;
+border:1px solid rgba(255,255,255,0.1);
+box-shadow:0 0 50px rgba(0,229,255,0.15);
+}
+
+.image-box img{
+width:100%;
+height:100%;
+object-fit:cover;
+filter:contrast(1.05) saturate(1.1);
+}
+
+/* overlay glow */
+.image-box::after{
+content:"";
+position:absolute;
+inset:0;
+background:linear-gradient(to top, rgba(0,0,0,0.6), transparent);
+}
+
+/* card text */
+.tag{
+position:absolute;
+bottom:15px;
+left:15px;
+padding:8px 14px;
+border-radius:20px;
+background:rgba(0,0,0,0.5);
+border:1px solid rgba(255,255,255,0.2);
+font-size:12px;
+z-index:2;
+}
+
+/* CTA */
+.cta{
+position:fixed;
+bottom:20px;
+left:20px;
+right:20px;
+padding:18px;
+border-radius:50px;
+text-align:center;
+font-size:18px;
+font-weight:800;
+text-decoration:none;
+color:black;
+background:linear-gradient(90deg,#00e5ff,#7c3aed);
+box-shadow:0 0 25px rgba(0,229,255,0.4);
+transition:0.3s;
+}
+
+.cta:hover{
+transform:scale(1.03);
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="bg-glow"></div>
+<div class="bg-glow2"></div>
+
+<div class="badge">
+<div class="dot"></div>
+PREMIUM ACCESS
+</div>
+
+<h1>
+Unlock the<br>
+<span class="neon">Neon Experience</span>
+</h1>
+
+<!-- IMAGE CENTER ADDED HERE -->
+<div class="image-box">
+<img src="https://i.ibb.co/QFjN3HWQ/20260522-095234.jpg" alt="premium">
+<div class="tag">🔥 Trending Now</div>
+</div>
+
+<a class="cta" href="https://t.me/Premium_Collection_bx">
+Join VIP Channel
+</a>
+
+</body>
+</html>
